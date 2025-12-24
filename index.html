@@ -22,10 +22,276 @@
                 <div class="bar"></div>
             </div>
             <ul class="nav-menu">
-                <li><a href="#why-us" class="nav-link active">Why Choose</a></li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="visit.html" class="nav-link">Visit Us</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Enhanced Intro Video Section -->
+    <section class="video-hero">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="https://player.vimeo.com/external/449759244.sd.mp4?s=d5f3da46ddc17aa69a7de84f959e5e42c5b8c229&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="video-overlay"></div>
+            <div class="video-content">
+                <div class="quote-container">
+                    <div class="quote-icon">"</div>
+                    <h1 class="main-quote">Tea is the elixir of life</h1>
+                    <p class="quote-author">- Lu Yu, The Classic of Tea</p>
+                    <p class="quote-subtext">Experience the perfect blend of tradition and taste</p>
+                    <div class="cta-buttons">
+                        <a href="#menu" class="btn btn-primary">View Our Menu</a>
+                        <a href="#contact" class="btn btn-outline">Visit Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialities Section -->
+    <section class="specialities-section" style="padding: 6rem 0; background: #fff;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 3rem; font-family: 'Cinzel', serif; color: #2c1810; position: relative; padding-bottom: 1rem; opacity: 0; transform: translateY(30px); transition: all 0.8s ease;">
+                Our Specialities
+                <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 3px; background: #c7a16b;"></span>
+            </h2>
+            <div class="specialities-grid" style="display: flex; flex-direction: column; align-items: flex-start; gap: 2rem; padding: 1rem; width: 100%;">
+                <style>
+                    .speciality-item {
+                        width: 100%;
+                        max-width: 1000px;
+                        margin: 0 auto 2rem;
+                        padding: 2rem 3rem;
+                        display: flex;
+                        align-items: center;
+                        gap: 3rem;
+                        background: #fff;
+                        border-radius: 10px;
+                        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+                        transition: all 0.5s ease;
+                        opacity: 0;
+                        transform: translateY(30px);
+                    }
+                    .speciality-icon {
+                        flex-shrink: 0;
+                        font-size: 4rem;
+                        color: #c7a16b;
+                        transition: all 0.3s ease;
+                    }
+                    .speciality-content {
+                        text-align: left;
+                        flex: 1;
+                    }
+                    .speciality-item.visible {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                    @media (max-width: 768px) {
+                        .speciality-item {
+                            flex-direction: column;
+                            text-align: center;
+                            padding: 2rem;
+                            gap: 1.5rem;
+                        }
+                        .speciality-content {
+                            text-align: center;
+                        }
+                    }
+                </style>
+                <div class="speciality-item">
+                    <div class="speciality-icon" style="font-size: 4rem; color: #c7a16b; transition: all 0.3s ease;">☕</div>
+                    <div class="speciality-content">
+                        <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: #2c1810;">Signature Chai</h3>
+                        <p style="color: #666; line-height: 1.7; font-size: 1.1rem;">Our special blend of tea leaves and aromatic spices brewed to perfection. A delightful experience that awakens your senses with every sip.</p>
+                    </div>
+                </div>
+                <div class="speciality-item">
+                    <div class="speciality-icon" style="font-size: 4rem; color: #c7a16b; transition: all 0.3s ease;">☕</div>
+                    <div class="speciality-content">
+                        <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: #2c1810;">Filter Coffee</h3>
+                        <p style="color: #666; line-height: 1.7; font-size: 1.1rem;">Rich South Indian filter coffee made with freshly ground coffee beans. Enjoy the authentic taste of traditional filter coffee that's brewed to perfection.</p>
+                    </div>
+                </div>
+                <div class="speciality-item">
+                    <div class="speciality-icon" style="font-size: 4rem; color: #c7a16b; transition: all 0.3s ease;">🥐</div>
+                    <div class="speciality-content">
+                        <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: #2c1810;">Snacks</h3>
+                        <p style="color: #666; line-height: 1.7; font-size: 1.1rem;">Delicious snacks that perfectly complement your favorite beverage. From savory to sweet, our selection is sure to satisfy your cravings.</p>
+                    </div>
+                </div>
+                <div class="speciality-item">
+                    <div class="speciality-icon" style="font-size: 4rem; color: #c7a16b; transition: all 0.3s ease;">🍰</div>
+                    <div class="speciality-content">
+                        <h3 style="font-size: 1.75rem; margin-bottom: 1rem; color: #2c1810;">Desserts</h3>
+                        <p style="color: #666; line-height: 1.7; font-size: 1.1rem;">Sweet treats to satisfy your cravings after a refreshing drink. Indulge in our selection of homemade desserts that perfectly complement our beverages.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* Video Hero Styles */
+        .video-hero {
+            position: relative;
+            width: 100%;
+            height: 90vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .video-background video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .video-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+        }
+        
+        .video-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            padding: 0 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .quote-container {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transform: translateY(0);
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .quote-icon {
+            font-size: 5rem;
+            font-family: Georgia, serif;
+            color: var(--secondary-color);
+            line-height: 1;
+            margin-bottom: -2rem;
+            opacity: 0.8;
+        }
+        
+        .main-quote {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            font-family: 'Cinzel', serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            line-height: 1.2;
+        }
+        
+        .quote-author {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+            color: var(--secondary-color);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .quote-subtext {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--secondary-color);
+            color: white;
+            border: 2px solid var(--secondary-color);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            .main-quote {
+                font-size: 2.5rem;
+            }
+            
+            .quote-author {
+                font-size: 1.2rem;
+            }
+            
+            .quote-subtext {
+                font-size: 1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 250px;
+                margin: 0.25rem 0;
+            }
+        }
+    </style>
 
     <!-- Why Choose Gowda's Tea -->
     <section class="why-us" id="why-us">
@@ -80,145 +346,642 @@
         </div>
     </section>
 
-    <!-- Menu Section -->
-    <section class="menu-section" id="menu">
-        <div class="container">
-            <h2>Our Menu</h2>
-            <div class="menu-categories">
-                <div class="category">
-                    <h3>Chai Specialties</h3>
-                    <ul>
-                        <li>Masala Chai <span>₹30</span></li>
-                        <li>Adrak (Ginger) Chai <span>₹35</span></li>
-                        <li>Elaichi (Cardamom) Chai <span>₹35</span></li>
-                        <li>Kesari (Saffron) Chai <span>₹50</span></li>
-                    </ul>
-                </div>
-                <div class="category">
-                    <h3>Beverages</h3>
-                    <ul>
-                        <li>Filter Coffee <span>₹40</span></li>
-                        <li>Cold Coffee <span>₹60</span></li>
-                        <li>Hot Chocolate <span>₹50</span></li>
-                        <li>Lemon Iced Tea <span>₹45</span></li>
-                    </ul>
-                </div>
-                <div class="category">
-                    <h3>Snacks</h3>
-                    <ul>
-                        <li>Samosa <span>₹25</span></li>
-                        <li>Vada Pav <span>₹30</span></li>
-                        <li>Bun Maska <span>₹40</span></li>
-                        <li>Bread Pakora <span>₹35</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about-section" id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>Our Heritage</h2>
-                    <p>Founded in 1995, Gowda's Tea Co. started as a small tea stall in Bangalore. What began as a passion for perfecting the art of tea-making has now grown into a beloved destination for tea enthusiasts across the city.</p>
-                    <p>We source our tea leaves directly from the finest estates and use traditional recipes that have been passed down through generations of the Gowda family.</p>
-                    <a href="#contact" class="btn">Visit Us</a>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Traditional tea preparation">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>What Our Customers Say</h2>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <div class="quote">"The best chai in Bangalore! I come here every morning before work."</div>
-                    <div class="customer">- Priya M.</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="quote">"Authentic taste that reminds me of my grandmother's chai. Simply amazing!"</div>
-                    <div class="customer">- Arjun P.</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="quote">"Love the ambiance and the snacks are the perfect accompaniment to their chai."</div>
-                    <div class="customer">- Meera K.</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact-section" id="contact">
-        <div class="container">
-            <h2>Visit Us</h2>
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <h3>Location</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> 123 Chai Street, Bangalore, Karnataka 560001</p>
-                    <p><i class="fas fa-phone"></i> +91 98765 43210</p>
-                    <p><i class="fas fa-envelope"></i> info@gowdatea.com</p>
+    <!-- Enhanced Image Slider Section -->
+    <section class="slider-section" style="padding: 5rem 0; background: #f8f5f0;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <h2 style="text-align: center; margin-bottom: 3rem; font-family: 'Cinzel', serif; color: #2c1810;">Our Tea Journey</h2>
+            <div class="slider-container" style="position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 15px 30px rgba(0,0,0,0.1);">
+                <div class="slider-track">
+                    <!-- Slide 1 -->
+                    <div class="slide active" style="position: relative; min-width: 100%; transition: transform 0.5s ease-in-out;">
+                        <div class="slide-content" style="display: flex; flex-wrap: wrap; height: 500px;">
+                            <div class="slide-image" style="flex: 1; min-width: 300px; height: 100%; overflow: hidden;">
+                                <img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Tea plantation" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                            </div>
+                            <div class="slide-text" style="flex: 1; min-width: 300px; padding: 3rem; background: white; display: flex; flex-direction: column; justify-content: center;">
+                                <span class="slide-tag" style="display: inline-block; background: #8b5a2b; color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.8rem; margin-bottom: 1rem; align-self: flex-start;">Our Origin</span>
+                                <h3 style="font-size: 2rem; margin-bottom: 1rem; color: #2c1810; font-family: 'Cinzel', serif;">Fresh from the Gardens</h3>
+                                <p style="color: #666; line-height: 1.6; margin-bottom: 2rem;">Nestled in the lush hills of Coorg, our tea gardens are home to the finest tea leaves, handpicked at the peak of freshness. The unique terroir and climate create a distinctive flavor profile that's rich and aromatic.</p>
+                                <a href="#about" class="btn-slide" style="display: inline-block; background: #8b5a2b; color: white; padding: 0.8rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; align-self: flex-start;">Discover More</a>
+                            </div>
+                        </div>
+                    </div>
                     
-                    <h3>Opening Hours</h3>
-                    <p>Monday - Friday: 6:00 AM - 10:00 PM</p>
-                    <p>Saturday - Sunday: 7:00 AM - 11:00 PM</p>
+                    <!-- Slide 2 -->
+                    <div class="slide" style="position: relative; min-width: 100%; transition: transform 0.5s ease-in-out;">
+                        <div class="slide-content" style="display: flex; flex-wrap: wrap; height: 500px;">
+                            <div class="slide-image" style="flex: 1; min-width: 300px; height: 100%; overflow: hidden; order: 2;">
+                                <img src="https://images.unsplash.com/photo-1597318181407-1a67726db345?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Tea brewing" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                            </div>
+                            <div class="slide-text" style="flex: 1; min-width: 300px; padding: 3rem; background: #f0e6d9; display: flex; flex-direction: column; justify-content: center;">
+                                <span class="slide-tag" style="display: inline-block; background: #8b5a2b; color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.8rem; margin-bottom: 1rem; align-self: flex-start;">Our Process</span>
+                                <h3 style="font-size: 2rem; margin-bottom: 1rem; color: #2c1810; font-family: 'Cinzel', serif;">Traditional Brewing</h3>
+                                <p style="color: #666; line-height: 1.6; margin-bottom: 2rem;">Our master blenders use time-honored techniques passed down through generations. Each batch is carefully monitored to ensure the perfect balance of flavors, creating a cup that's rich, aromatic, and full-bodied.</p>
+                                <a href="#menu" class="btn-slide" style="display: inline-block; background: #8b5a2b; color: white; padding: 0.8rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; align-self: flex-start;">View Menu</a>
+                            </div>
+                        </div>
+                    </div>
                     
-                    <div class="social-media">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    <!-- Slide 3 -->
+                    <div class="slide" style="position: relative; min-width: 100%; transition: transform 0.5s ease-in-out;">
+                        <div class="slide-content" style="display: flex; flex-wrap: wrap; height: 500px;">
+                            <div class="slide-image" style="flex: 1; min-width: 300px; height: 100%; overflow: hidden;">
+                                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Tea serving" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                            </div>
+                            <div class="slide-text" style="flex: 1; min-width: 300px; padding: 3rem; background: white; display: flex; flex-direction: column; justify-content: center;">
+                                <span class="slide-tag" style="display: inline-block; background: #8b5a2b; color: white; padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.8rem; margin-bottom: 1rem; align-self: flex-start;">Our Promise</span>
+                                <h3 style="font-size: 2rem; margin-bottom: 1rem; color: #2c1810; font-family: 'Cinzel', serif;">Served with Love</h3>
+                                <p style="color: #666; line-height: 1.6; margin-bottom: 2rem;">Every cup of Gowda's Tea is a testament to our commitment to quality and tradition. We believe in serving not just tea, but an experience that warms the heart and soothes the soul.</p>
+                                <a href="#contact" class="btn-slide" style="display: inline-block; background: #8b5a2b; color: white; padding: 0.8rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; align-self: flex-start;">Visit Us</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.007593412787!2d77.59418931482193!3d12.971997990856068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf5dfd3b4a2a1a3b5!2sBangalore%2C%20Karnataka%20560001!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                
+                <!-- Navigation Buttons -->
+                <button class="slider-btn prev" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: none; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; z-index: 10; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #2c1810;">
+                    ❮
+                </button>
+                <button class="slider-btn next" style="position: absolute; right: 20px; top: 50%; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: none; width: 50px; height: 50px; border-radius: 50%; cursor: pointer; z-index: 10; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: #2c1810;">
+                    ❯
+                </button>
+                
+                <!-- Dots Navigation -->
+                <div class="slider-dots" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); display: flex; gap: 10px; z-index: 10;">
+                    <span class="dot active" data-slide="0" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: all 0.3s ease;"></span>
+                    <span class="dot" data-slide="1" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: all 0.3s ease;"></span>
+                    <span class="dot" data-slide="2" style="width: 12px; height: 12px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: all 0.3s ease;"></span>
                 </div>
+            </div>
+        </div>
+        
+        <style>
+            .slider-section {
+                position: relative;
+                overflow: hidden;
+            }
+            
+            .slider-track {
+                display: flex;
+                transition: transform 0.5s ease-in-out;
+                height: 100%;
+            }
+            
+            .slide {
+                min-width: 100%;
+                transition: opacity 0.5s ease-in-out;
+            }
+            
+            .slide:not(.active) {
+                display: none;
+            }
+            
+            .slide-image img:hover {
+                transform: scale(1.05);
+            }
+            
+            .btn-slide:hover {
+                background: #6b4423 !important;
+                transform: translateY(-3px);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            }
+            
+            .slider-btn:hover {
+                background: white !important;
+                transform: translateY(-50%) scale(1.1) !important;
+            }
+            
+            .dot.active {
+                background: white !important;
+                transform: scale(1.3);
+            }
+            
+            @media (max-width: 768px) {
+                .slide-content {
+                    flex-direction: column;
+                    height: auto !important;
+                }
+                
+                .slide-image, .slide-text {
+                    min-width: 100% !important;
+                    height: 300px !important;
+                }
+                
+                .slide-text {
+                    order: 2;
+                }
+                
+                .slider-btn {
+                    width: 40px !important;
+                    height: 40px !important;
+                    font-size: 1rem !important;
+                }
+            }
+        </style>
+        
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const track = document.querySelector('.slider-track');
+                const slides = document.querySelectorAll('.slide');
+                const dots = document.querySelectorAll('.dot');
+                const prevBtn = document.querySelector('.slider-btn.prev');
+                const nextBtn = document.querySelector('.slider-btn.next');
+                let currentSlide = 0;
+                
+                // Set initial active slide
+                updateSlider();
+                
+                // Auto slide every 5 seconds
+                let slideInterval = setInterval(nextSlide, 5000);
+                
+                // Pause on hover
+                const slider = document.querySelector('.slider-container');
+                slider.addEventListener('mouseenter', () => clearInterval(slideInterval));
+                slider.addEventListener('mouseleave', () => slideInterval = setInterval(nextSlide, 5000));
+                
+                // Next slide function
+                function nextSlide() {
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    updateSlider();
+                }
+                
+                // Previous slide function
+                function prevSlide() {
+                    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                    updateSlider();
+                }
+                
+                // Update slider display
+                function updateSlider() {
+                    // Update track position
+                    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+                    
+                    // Update dots
+                    dots.forEach((dot, index) => {
+                        dot.classList.toggle('active', index === currentSlide);
+                    });
+                    
+                    // Update active class on slides
+                    slides.forEach((slide, index) => {
+                        if (index === currentSlide) {
+                            slide.classList.add('active');
+                        } else {
+                            slide.classList.remove('active');
+                        }
+                    });
+                }
+                
+                // Event listeners
+                prevBtn.addEventListener('click', () => {
+                    clearInterval(slideInterval);
+                    prevSlide();
+                    slideInterval = setInterval(nextSlide, 5000);
+                });
+                
+                nextBtn.addEventListener('click', () => {
+                    clearInterval(slideInterval);
+                    nextSlide();
+                    slideInterval = setInterval(nextSlide, 5000);
+                });
+                
+                dots.forEach(dot => {
+                    dot.addEventListener('click', () => {
+                        clearInterval(slideInterval);
+                        currentSlide = parseInt(dot.getAttribute('data-slide'));
+                        updateSlider();
+                        slideInterval = setInterval(nextSlide, 5000);
+                    });
+                });
+                
+                // Touch support
+                let touchStartX = 0;
+                let touchEndX = 0;
+                
+                slider.addEventListener('touchstart', e => {
+                    touchStartX = e.changedTouches[0].screenX;
+                }, false);
+                
+                slider.addEventListener('touchend', e => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    handleSwipe();
+                }, false);
+                
+                function handleSwipe() {
+                    if (touchEndX < touchStartX - 50) {
+                        // Swipe left
+                        nextSlide();
+                    }
+                    if (touchEndX > touchStartX + 50) {
+                        // Swipe right
+                        prevSlide();
+                    }
+                }
+            });
+        </script>
+    </section>
+
+    <!-- Enhanced About Section -->
+    <section class="about-section" id="about" style="position: relative; padding: 6rem 0; background: linear-gradient(135deg, #f8f5f0 0%, #f0e6d9 100%);">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 1;">
+            <div class="about-content" style="display: flex; flex-wrap: wrap; align-items: center; background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 15px 30px rgba(0,0,0,0.1);">
+                <div class="about-text" style="flex: 1; min-width: 300px; padding: 4rem; position: relative;">
+                    <span style="display: inline-block; color: #8b5a2b; font-size: 1rem; font-weight: 600; letter-spacing: 2px; margin-bottom: 1rem; text-transform: uppercase;">Our Story</span>
+                    <h2 style="font-size: 2.5rem; color: #2c1810; margin-bottom: 1.5rem; font-family: 'Cinzel', serif; position: relative; display: inline-block;">
+                        The Gowda Legacy
+                        <span style="content: ''; display: block; width: 60px; height: 3px; background: #8b5a2b; margin-top: 1rem;"></span>
+                    </h2>
+                    <p style="color: #666; line-height: 1.8; margin-bottom: 1.5rem; font-size: 1.1rem;">Founded in 1995 in the heart of Bangalore, Gowda's Tea Co. began as a humble tea stall with a simple mission: to serve the perfect cup of chai. What started as a family's passion project has blossomed into a beloved institution, cherished by tea enthusiasts across the city.</p>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin: 2rem 0;">
+                        <div class="heritage-feature" style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <div style="background: #f8f5f0; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-leaf" style="color: #8b5a2b; font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin: 0 0 0.5rem 0; color: #2c1810; font-size: 1.1rem;">Direct Sourcing</h4>
+                                <p style="margin: 0; color: #777; font-size: 0.95rem; line-height: 1.5;">Partnering directly with tea estates for the freshest leaves.</p>
+                            </div>
+                        </div>
+                        <div class="heritage-feature" style="display: flex; align-items: flex-start; gap: 1rem;">
+                            <div style="background: #f8f5f0; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                <i class="fas fa-mortar-pestle" style="color: #8b5a2b; font-size: 1.2rem;"></i>
+                            </div>
+                            <div>
+                                <h4 style="margin: 0 0 0.5rem 0; color: #2c1810; font-size: 1.1rem;">Traditional Recipes</h4>
+                                <p style="margin: 0; color: #777; font-size: 0.95rem; line-height: 1.5;">Time-honored methods passed through generations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn-heritage" style="display: inline-flex; align-items: center; background: #8b5a2b; color: white; padding: 0.8rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; margin-top: 1rem;">
+                        Visit Our Chai Point
+                        <i class="fas fa-arrow-right" style="margin-left: 0.5rem; transition: transform 0.3s ease;"></i>
+                    </a>
+                </div>
+                
+                <div class="about-image" style="flex: 1; min-width: 300px; height: 100%; position: relative;">
+                    <div style="position: relative; height: 100%; min-height: 600px; background: url('https://images.unsplash.com/photo-1558160074-4d7d8bdf4256?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80') center/cover no-repeat;">
+                        <div style="position: absolute; top: 30px; left: -30px; width: 150px; height: 150px; background: #8b5a2b; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-family: 'Cinzel', serif; font-size: 1.2rem; text-align: center; padding: 1rem; box-shadow: 0 10px 30px rgba(139, 90, 43, 0.3);">
+                            Since 1995
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <style>
+            .btn-heritage:hover {
+                background: #6b4423 !important;
+                transform: translateY(-3px);
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            }
+            
+            .btn-heritage:hover i {
+                transform: translateX(5px);
+            }
+            
+            .heritage-feature {
+                transition: transform 0.3s ease;
+            }
+            
+            .heritage-feature:hover {
+                transform: translateY(-5px);
+            }
+            
+            @media (max-width: 992px) {
+                .about-content {
+                    flex-direction: column;
+                }
+                
+                .about-text, .about-image {
+                    width: 100%;
+                }
+                
+                .about-image {
+                    order: -1;
+                    min-height: 400px;
+                }
+                
+                .about-text {
+                    padding: 2rem !important;
+                }
+            }
+        </style>
+    </section>
+
+
+    <!-- Google Reviews Section -->
+    <section class="reviews-section" style="background-color: #f9f9f9; padding: 5rem 0;">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">What Our Customers Say</h2>
+            <div class="google-reviews" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding: 0 2rem;">
+                <!-- Google Review Card 1 -->
+                <div class="review-card" style="background: white; border-radius: 10px; padding: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <div class="review-header" style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <div class="reviewer-avatar" style="width: 50px; height: 50px; border-radius: 50%; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                            <i class="fas fa-user" style="font-size: 1.5rem; color: #666;"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin: 0; color: #333;">Rahul S.</h4>
+                            <div class="stars" style="color: #FFD700; font-size: 1rem;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="color: #555; line-height: 1.6; margin-bottom: 1rem;">"The best chai in town! Authentic taste and perfect blend of spices. A must-try for all tea lovers."</p>
+                    <div class="google-logo" style="display: flex; align-items: center; margin-top: 1rem;">
+                        <img src="https://www.google.com/images/branding/product/1x/google_logo_48dp.png" alt="Google" style="height: 16px; margin-right: 8px;">
+                        <span style="font-size: 0.9rem; color: #666;">Google Review</span>
+                    </div>
+                </div>
+
+                <!-- Google Review Card 2 -->
+                <div class="review-card" style="background: white; border-radius: 10px; padding: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <div class="review-header" style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <div class="reviewer-avatar" style="width: 50px; height: 50px; border-radius: 50%; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                            <i class="fas fa-user" style="font-size: 1.5rem; color: #666;"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin: 0; color: #333;">Priya M.</h4>
+                            <div class="stars" style="color: #FFD700; font-size: 1rem;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="color: #555; line-height: 1.6; margin-bottom: 1rem;">"Love the ambiance and the chai is just perfect! Their masala chai reminds me of home. Highly recommended!"</p>
+                    <div class="google-logo" style="display: flex; align-items: center; margin-top: 1rem;">
+                        <img src="https://www.google.com/images/branding/product/1x/google_logo_48dp.png" alt="Google" style="height: 16px; margin-right: 8px;">
+                        <span style="font-size: 0.9rem; color: #666;">Google Review</span>
+                    </div>
+                </div>
+
+                <!-- Google Review Card 3 -->
+                <div class="review-card" style="background: white; border-radius: 10px; padding: 2rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <div class="review-header" style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <div class="reviewer-avatar" style="width: 50px; height: 50px; border-radius: 50%; background-color: #f0f0f0; display: flex; align-items: center; justify-content: center; margin-right: 1rem;">
+                            <i class="fas fa-user" style="font-size: 1.5rem; color: #666;"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin: 0; color: #333;">Arjun K.</h4>
+                            <div class="stars" style="color: #FFD700; font-size: 1rem;">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p style="color: #555; line-height: 1.6; margin-bottom: 1rem;">"Great place to relax with friends. The tea and snacks combo is amazing. Will definitely visit again!"</p>
+                    <div class="google-logo" style="display: flex; align-items: center; margin-top: 1rem;">
+                        <img src="https://www.google.com/images/branding/product/1x/google_logo_48dp.png" alt="Google" style="height: 16px; margin-right: 8px;">
+                        <span style="font-size: 0.9rem; color: #666;">Google Review</span>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://search.google.com/local/writereview?placeid=YOUR_PLACE_ID" target="_blank" class="btn" style="background-color: #4285F4; color: white; padding: 12px 24px; border-radius: 50px; text-decoration: none; display: inline-block; font-weight: 600; transition: all 0.3s ease;">
+                    <i class="fab fa-google" style="margin-right: 8px;"></i> Write a Review
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h3>Gowda's Tea Co.</h3>
-                    <p>The Heritage Chai Point</p>
+    <!-- Visit Us Section -->
+    <section class="visit-section" id="contact" style="padding: 6rem 0; background: #f9f5f0;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 3rem; font-family: 'Cinzel', serif; color: #2c1810; position: relative; padding-bottom: 1rem;">
+                Visit Us
+                <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 3px; background: #c7a16b;"></span>
+            </h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 4rem;">
+                <!-- Contact Information -->
+                <div class="contact-info" style="background: white; padding: 3rem; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.05);">
+                    <div style="margin-bottom: 2.5rem;">
+                        <h3 style="font-size: 1.5rem; color: #2c1810; margin-bottom: 1.5rem; display: flex; align-items: center;">
+                            <i class="fas fa-map-marker-alt" style="color: #c7a16b; margin-right: 1rem; font-size: 1.8rem;"></i>
+                            Our Location
+                        </h3>
+                        <p style="color: #555; line-height: 1.7; margin-left: 3rem;">
+                            123 Chai Street,<br>
+                            Bangalore, Karnataka 560001
+                        </p>
+                    </div>
+                    
+                    <div style="margin-bottom: 2.5rem;">
+                        <h3 style="font-size: 1.5rem; color: #2c1810; margin-bottom: 1.5rem; display: flex; align-items: center;">
+                            <i class="far fa-clock" style="color: #c7a16b; margin-right: 1rem; font-size: 1.8rem;"></i>
+                            Opening Hours
+                        </h3>
+                        <div style="margin-left: 3rem;">
+                            <div style="display: flex; justify-content: space-between; padding: 0.8rem 0; border-bottom: 1px dashed #eee;">
+                                <span style="color: #666;">Monday - Friday</span>
+                                <span style="color: #2c1810; font-weight: 500;">6:00 AM - 10:00 PM</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: 0.8rem 0; border-bottom: 1px dashed #eee;">
+                                <span style="color: #666;">Saturday - Sunday</span>
+                                <span style="color: #2c1810; font-weight: 500;">7:00 AM - 11:00 PM</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h3 style="font-size: 1.5rem; color: #2c1810; margin-bottom: 1.5rem; display: flex; align-items: center;">
+                            <i class="fas fa-phone-alt" style="color: #c7a16b; margin-right: 1rem; font-size: 1.8rem;"></i>
+                            Contact Us
+                        </h3>
+                        <div style="margin-left: 3rem;">
+                            <p style="color: #555; margin-bottom: 0.8rem;">
+                                <i class="fas fa-phone" style="color: #c7a16b; width: 20px; margin-right: 1rem;"></i>
+                                +91 98765 43210
+                            </p>
+                            <p style="color: #555;">
+                                <i class="fas fa-envelope" style="color: #c7a16b; width: 20px; margin-right: 1rem;"></i>
+                                info@gowdatea.com
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-top: 3rem;">
+                        <h4 style="font-size: 1.2rem; color: #2c1810; margin-bottom: 1rem;">Follow Us</h4>
+                        <div class="social-links" style="display: flex; gap: 1rem;">
+                            <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #f0e6d9; border-radius: 50%; color: #2c1810; transition: all 0.3s ease;">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #f0e6d9; border-radius: 50%; color: #2c1810; transition: all 0.3s ease;">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: #f0e6d9; border-radius: 50%; color: #2c1810; transition: all 0.3s ease;">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#why-us">Why Choose Us</a></li>
-                        <li><a href="#menu">Our Menu</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-newsletter">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe for updates and special offers</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Your email address">
-                        <button type="submit">Subscribe</button>
-                    </form>
+                
+                <!-- Map -->
+                <div class="map-container" style="height: 100%; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.007593412787!2d77.59418931482193!3d12.971997990856068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf5dfd3b4a2a1a3b5!2sBangalore%2C%20Karnataka%2056001!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0; min-height: 500px;" 
+                        allowfullscreen="" 
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Gowda's Tea Co. All Rights Reserved.</p>
-                <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                </div>
+            
+            <!-- Directions Button -->
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="https://www.google.com/maps/dir//123+Chai+Street,+Bangalore,+Karnataka+560001/@12.971998,77.5941893,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3bae1670c9b44e6d:0xf5dfd3b4a2a1a3b5!2m2!1d77.596378!2d12.971993" 
+                   target="_blank" 
+                   style="display: inline-flex; align-items: center; background: #c7a16b; color: white; padding: 1rem 2rem; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(199, 161, 107, 0.3);">
+                    <i class="fas fa-directions" style="margin-right: 0.8rem;"></i>
+                    Get Directions
+                </a>
             </div>
         </div>
-    </footer>
+    </section>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const track = document.querySelector('.slider-track');
+            const slides = document.querySelectorAll('.slide');
+            const dotsContainer = document.querySelector('.slider-dots');
+            const prevBtn = document.querySelector('.slider-btn.prev');
+            const nextBtn = document.querySelector('.slider-btn.next');
+            let currentSlide = 0;
+            let slideInterval;
+            
+            // Initialize slider only if elements exist
+            if (slides.length > 0 && track && prevBtn && nextBtn) {
+                // Create dots if container exists
+                if (dotsContainer) {
+                    slides.forEach((_, index) => {
+                        const dot = document.createElement('div');
+                        dot.classList.add('dot');
+                        if (index === 0) dot.classList.add('active');
+                        dot.addEventListener('click', () => goToSlide(index));
+                        dotsContainer.appendChild(dot);
+                    });
+                }
+                
+                const dots = document.querySelectorAll('.dot');
+                
+                // Initialize slider
+                updateSlider();
+                
+                // Auto slide
+                function startAutoSlide() {
+                    if (slideInterval) clearInterval(slideInterval);
+                    slideInterval = setInterval(nextSlide, 5000);
+                }
+                
+                // Start auto slide
+                startAutoSlide();
+                
+                // Pause on hover
+                const slider = document.querySelector('.slider-container');
+                if (slider) {
+                    slider.addEventListener('mouseenter', () => clearInterval(slideInterval));
+                    slider.addEventListener('mouseleave', startAutoSlide);
+                }
+                
+                // Next slide function
+                function nextSlide() {
+                    goToSlide((currentSlide + 1) % slides.length);
+                }
+                
+                // Previous slide function
+                function prevSlide() {
+                    goToSlide((currentSlide - 1 + slides.length) % slides.length);
+                }
+                
+                // Go to specific slide
+                function goToSlide(n) {
+                    currentSlide = n;
+                    updateSlider();
+                }
+                
+                // Update slider display
+                function updateSlider() {
+                    // Update track position
+                    if (track) {
+                        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+                    }
+                    
+                    // Update dots
+                    if (dots.length > 0) {
+                        dots.forEach((dot, index) => {
+                            dot.classList.toggle('active', index === currentSlide);
+                        });
+                    }
+                    
+                    // Update active class on slides
+                    slides.forEach((slide, index) => {
+                        if (index === currentSlide) {
+                            slide.classList.add('active');
+                        } else {
+                            slide.classList.remove('active');
+                        }
+                    });
+                }
+                
+                // Event listeners
+                prevBtn.addEventListener('click', () => {
+                    clearInterval(slideInterval);
+                    prevSlide();
+                    startAutoSlide();
+                });
+                
+                nextBtn.addEventListener('click', () => {
+                    clearInterval(slideInterval);
+                    nextSlide();
+                    startAutoSlide();
+                });
+                
+                // Touch support
+                let touchStartX = 0;
+                let touchEndX = 0;
+                
+                if (slider) {
+                    slider.addEventListener('touchstart', e => {
+                        touchStartX = e.changedTouches[0].screenX;
+                    }, false);
+                    
+                    slider.addEventListener('touchend', e => {
+                        touchEndX = e.changedTouches[0].screenX;
+                        handleSwipe();
+                    }, false);
+                }
+                
+                function handleSwipe() {
+                    if (touchEndX < touchStartX - 50) {
+                        // Swipe left
+                        nextSlide();
+                    }
+                    if (touchEndX > touchStartX + 50) {
+                        // Swipe right
+                        prevSlide();
+                    }
+                }
+                
+                // Cleanup on page unload
+                window.addEventListener('unload', () => {
+                    clearInterval(slideInterval);
+                });
+            }
+        
         // Mobile menu toggle
         const hamburger = document.querySelector('.hamburger');
         const navMenu = document.querySelector('.nav-menu');
@@ -271,6 +1034,257 @@
                 }
             });
         });
+    </script>
+
+    <!-- Modern Footer -->
+    <footer class="site-footer" style="background: linear-gradient(135deg, #2c1810 0%, #1a0f0a 100%); color: #fff; padding: 4rem 0 2rem; margin-top: 4rem;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <div class="footer-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+                <!-- About Column -->
+                <div class="footer-about">
+                    <h3 style="font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 1.5rem; color: #e6c7a8; position: relative; padding-bottom: 0.75rem;">
+                        <span style="position: relative;">
+                            Gowda's Tea Co.
+                            <span style="position: absolute; bottom: -0.75rem; left: 0; width: 50px; height: 2px; background: #c7a16b;"></span>
+                        </span>
+                    </h3>
+                    <p style="color: #c7c7c7; line-height: 1.7; margin-bottom: 1.5rem;">
+                        Preserving the rich heritage of authentic Indian tea traditions since 1995. Every cup tells a story of passion, tradition, and excellence.
+                    </p>
+                    <div class="social-links" style="display: flex; gap: 1rem;">
+                        <a href="#" style="color: #e6c7a8; font-size: 1.25rem; transition: color 0.3s ease;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="color: #e6c7a8; font-size: 1.25rem; transition: color 0.3s ease;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: #e6c7a8; font-size: 1.25rem; transition: color 0.3s ease;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: #e6c7a8; font-size: 1.25rem; transition: color 0.3s ease;"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3 style="font-family: 'Cinzel', serif; font-size: 1.25rem; margin-bottom: 1.5rem; color: #e6c7a8; position: relative; padding-bottom: 0.75rem;">
+                        <span style="position: relative;">
+                            Quick Links
+                            <span style="position: absolute; bottom: -0.75rem; left: 0; width: 40px; height: 2px; background: #c7a16b;"></span>
+                        </span>
+                    </h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.75rem;"><a href="#" style="color: #c7c7c7; text-decoration: none; transition: color 0.3s ease, padding-left: 0.5rem; border-left: 2px solid transparent; display: block;"><i class="fas fa-chevron-right" style="margin-right: 8px; font-size: 0.7rem; color: #c7a16b;"></i> Home</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="menu.html" style="color: #c7c7c7; text-decoration: none; transition: color 0.3s ease, padding-left: 0.5rem; border-left: 2px solid transparent; display: block;"><i class="fas fa-chevron-right" style="margin-right: 8px; font-size: 0.7rem; color: #c7a16b;"></i> Our Menu</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="about.html" style="color: #c7c7c7; text-decoration: none; transition: color 0.3s ease, padding-left: 0.5rem; border-left: 2px solid transparent; display: block;"><i class="fas fa-chevron-right" style="margin-right: 8px; font-size: 0.7rem; color: #c7a16b;"></i> About Us</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="#contact" style="color: #c7c7c7; text-decoration: none; transition: color 0.3s ease, padding-left: 0.5rem; border-left: 2px solid transparent; display: block;"><i class="fas fa-chevron-right" style="margin-right: 8px; font-size: 0.7rem; color: #c7a16b;"></i> Contact</a></li>
+                        <li style="margin-bottom: 0.75rem;"><a href="#" style="color: #c7c7c7; text-decoration: none; transition: color 0.3s ease, padding-left: 0.5rem; border-left: 2px solid transparent; display: block;"><i class="fas fa-chevron-right" style="margin-right: 8px; font-size: 0.7rem; color: #c7a16b;"></i> Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h3 style="font-family: 'Cinzel', serif; font-size: 1.25rem; margin-bottom: 1.5rem; color: #e6c7a8; position: relative; padding-bottom: 0.75rem;">
+                        <span style="position: relative;">
+                            Contact Us
+                            <span style="position: absolute; bottom: -0.75rem; left: 0; width: 40px; height: 2px; background: #c7a16b;"></span>
+                        </span>
+                    </h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="display: flex; align-items: flex-start; margin-bottom: 1rem;">
+                            <i class="fas fa-map-marker-alt" style="color: #c7a16b; margin-right: 1rem; margin-top: 0.25rem; font-size: 1.1rem;"></i>
+                            <span style="color: #c7c7c7; line-height: 1.5;">123 Tea Garden Road,<br>Bengaluru, Karnataka 560001</span>
+                        </li>
+                        <li style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <i class="fas fa-phone-alt" style="color: #c7a16b; margin-right: 1rem; font-size: 1.1rem;"></i>
+                            <a href="tel:+919876543210" style="color: #c7c7c7; text-decoration: none; transition: color 0.3s ease;">+91 98765 43210</a>
+                        </li>
+                        <li style="display: flex; align-items: center; margin-bottom: 1rem;">
+                            <i class="fas fa-envelope" style="color: #c7a16b; margin-right: 1rem; font-size: 1.1rem;"></i>
+                            <a href="mailto:info@gowdastea.com" style="color: #c7c7c7; text-decoration: none; transition: color 0.3s ease;">info@gowdastea.com</a>
+                        </li>
+                        <li style="display: flex; align-items: center;">
+                            <i class="far fa-clock" style="color: #c7a16b; margin-right: 1rem; font-size: 1.1rem;"></i>
+                            <span style="color: #c7c7c7;">Open Daily: 7:00 AM - 11:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-newsletter">
+                    <h3 style="font-family: 'Cinzel', serif; font-size: 1.25rem; margin-bottom: 1.5rem; color: #e6c7a8; position: relative; padding-bottom: 0.75rem;">
+                        <span style="position: relative;">
+                            Newsletter
+                            <span style="position: absolute; bottom: -0.75rem; left: 0; width: 40px; height: 2px; background: #c7a16b;"></span>
+                        </span>
+                    </h3>
+                    <p style="color: #c7c7c7; line-height: 1.7; margin-bottom: 1.5rem;">
+                        Subscribe to our newsletter for the latest updates, special offers, and tea brewing tips.
+                    </p>
+                    <form class="newsletter-form" style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                        <input type="email" placeholder="Your email address" required style="flex: 1; min-width: 200px; padding: 0.75rem 1rem; border: 1px solid #3a2a1f; background: rgba(255, 255, 255, 0.05); color: #fff; border-radius: 4px; font-family: 'Montserrat', sans-serif; transition: all 0.3s ease;">
+                        <button type="submit" style="background: #c7a16b; color: #2c1810; border: none; padding: 0 1.5rem; font-weight: 600; border-radius: 4px; cursor: pointer; transition: all 0.3s ease; white-space: nowrap; height: 45px;">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom" style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; text-align: center;">
+                <p style="color: #8a8a8a; margin: 0; font-size: 0.9rem;">
+                    &copy; 2023 Gowda's Tea Co. All Rights Reserved. 
+                    <span style="display: inline-block; margin: 0 0.5rem;">|</span> 
+                    <a href="#" style="color: #c7a16b; text-decoration: none; transition: color 0.3s ease;">Privacy Policy</a> 
+                    <span style="display: inline-block; margin: 0 0.5rem;">|</span> 
+                    <a href="#" style="color: #c7a16b; text-decoration: none; transition: color 0.3s ease;">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Specialities section scroll animation
+        document.addEventListener('DOMContentLoaded', function() {
+            const specialityItems = document.querySelectorAll('.speciality-item');
+            const sectionTitle = document.querySelector('.specialities-section .section-title');
+            let delay = 0;
+            
+            // Animate section title
+            const titleObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        titleObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            if (sectionTitle) {
+                titleObserver.observe(sectionTitle);
+            }
+            
+            // Animate speciality items with staggered delay
+            specialityItems.forEach((item) => {
+                setTimeout(() => {
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                entry.target.classList.add('visible');
+                                observer.unobserve(entry.target);
+                            }
+                        });
+                    }, { threshold: 0.1 });
+                    
+                    observer.observe(item);
+                }, delay);
+                
+                // Increment delay for next item
+                delay += 150;
+            });
+            
+            // Function to check if element is in viewport
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
+            }
+            
+            // Function to handle scroll animations
+            function handleScrollAnimations() {
+                // Animate section title
+                if (isInViewport(sectionTitle)) {
+                    sectionTitle.style.opacity = '1';
+                    sectionTitle.style.transform = 'translateY(0)';
+                }
+                
+                // Animate each speciality item with a delay
+                specialityItems.forEach((item, index) => {
+                    if (isInViewport(item)) {
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                            
+                            // Add hover effect
+                            item.addEventListener('mouseenter', () => {
+                                item.style.transform = 'translateY(-10px)';
+                                item.querySelector('.speciality-icon').style.transform = 'scale(1.1)';
+                            });
+                            
+                            item.addEventListener('mouseleave', () => {
+                                item.style.transform = 'translateY(0)';
+                                item.querySelector('.speciality-icon').style.transform = 'scale(1)';
+                            });
+                        }, index * 150); // Staggered delay for each item
+                    }
+                });
+            }
+            
+            // Initial check on page load
+            handleScrollAnimations();
+            
+            // Listen for scroll events
+            window.addEventListener('scroll', handleScrollAnimations);
+        });
+    </script>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" style="position: fixed; bottom: 2rem; right: 2rem; background: #c7a16b; color: #2c1810; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; z-index: 99; opacity: 0; visibility: hidden; transform: translateY(20px);">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.querySelector('.back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.opacity = '1';
+                backToTopButton.style.visibility = 'visible';
+                backToTopButton.style.transform = 'translateY(0)';
+            } else {
+                backToTopButton.style.opacity = '0';
+                backToTopButton.style.visibility = 'hidden';
+                backToTopButton.style.transform = 'translateY(20px)';
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Add hover effect to footer links
+        document.querySelectorAll('.footer-links a, .footer-contact a').forEach(link => {
+            link.addEventListener('mouseover', () => {
+                link.style.color = '#e6c7a8';
+                if (link.parentElement.tagName === 'LI') {
+                    link.style.borderLeftColor = '#c7a16b';
+                }
+            });
+            
+            link.addEventListener('mouseout', () => {
+                link.style.color = '#c7c7c7';
+                if (link.parentElement.tagName === 'LI') {
+                    link.style.borderLeftColor = 'transparent';
+                }
+            });
+        });
+
+        // Newsletter form submission
+        const newsletterForm = document.querySelector('.newsletter-form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const emailInput = newsletterForm.querySelector('input[type="email"]');
+                if (emailInput.value) {
+                    alert('Thank you for subscribing to our newsletter!');
+                    emailInput.value = '';
+                }
+            });
+        }
     </script>
 </body>
 </html>

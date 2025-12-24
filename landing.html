@@ -177,6 +177,11 @@
                 max-width: 250px;
                 margin: 0.5rem 0;
             }
+
+            .specialities-grid {
+                grid-template-columns: 1fr;
+                padding: 0 15px;
+            }
         }
     </style>
 </head>
@@ -192,75 +197,126 @@
         </div>
     </section>
 
-    <!-- Our Tea Journey Section -->
-    <section class="journey-section" style="padding: 5rem 10%; background-color: #f9f9f9; text-align: center;">
-        <h2 class="section-title fade-in">Our Tea Journey</h2>
-        <div class="journey-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
-            <div class="stat-card fade-in-up delay-1" style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-                <h3 style="color: #666; font-size: 1.2rem; margin-bottom: 1rem;">Since</h3>
-                <p style="font-size: 3rem; font-weight: bold; color: var(--secondary-color); margin: 0.5rem 0;">1,995</p>
-                <p style="color: #666;">Years of Excellence</p>
-            </div>
-            <div class="stat-card fade-in-up delay-2" style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-                <h3 style="color: #666; font-size: 1.2rem; margin-bottom: 1rem;">Growth</h3>
-                <p style="font-size: 3rem; font-weight: bold; color: var(--secondary-color); margin: 0.5rem 0;">300%</p>
-                <p style="color: #666;">Growth Rate</p>
-            </div>
-            <div class="stat-card fade-in-up delay-3" style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-                <h3 style="color: #666; font-size: 1.2rem; margin-bottom: 1rem;">Cups Served</h3>
-                <p style="font-size: 3rem; font-weight: bold; color: var(--secondary-color); margin: 0.5rem 0;">10,00,000+</p>
-                <p style="color: #666;">And Counting</p>
-            </div>
-        </div>
-    </section>
+    <!-- Specialities Section -->
+    <section class="specialities" style="padding: 4rem 5%; background: #f9f5f0;">
+        <div class="container" style="max-width: 1400px; margin: 0 auto; padding: 0 20px;">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 3rem; font-family: 'Cinzel', serif; color: #2c1810; position: relative; padding-bottom: 1rem;">
+                Our Specialities
+                <span style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 3px; background: #c7a16b;"></span>
+            </h2>
+            <div class="specialities-grid" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <!-- Card 1 -->
+                <div class="tablet-card" style="flex: 1; min-width: 250px; max-width: 280px; background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.3s ease; position: relative; overflow: hidden;">
+                    <div class="tablet-screen" style="background: linear-gradient(135deg, #f8f5f0 0%, #f0e6d9 100%); border-radius: 12px; padding: 2rem; height: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; position: relative; z-index: 2;">
+                        <div class="icon-wrapper" style="width: 80px; height: 80px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(199, 161, 107, 0.3);">
+                            <span style="font-size: 2.5rem;">☕</span>
+                        </div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #2c1810; font-family: 'Cinzel', serif;">Signature Chai</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 1.5rem;">Our special blend of tea leaves and aromatic spices brewed to perfection.</p>
+                    </div>
+                    <div class="tablet-frame" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; border: 2px solid rgba(199, 161, 107, 0.3); border-radius: 20px; pointer-events: none;"></div>
+                </div>
 
-    <!-- Coffee Experience Section -->
-    <section class="coffee-experience" style="padding: 5rem 10%; background-color: white; text-align: center;">
-        <div class="container" style="max-width: 900px; margin: 0 auto;">
-            <h2 class="fade-in" style="font-size: 2.5rem; margin-bottom: 2rem; color: #333;">Experience Modern Indian Speciality Coffee</h2>
-            <p class="fade-in-up delay-1" style="font-size: 1.2rem; line-height: 1.8; color: #555; margin-bottom: 1.5rem;">
-                Roastery is India's home for speciality coffee, served fresh in our modern Indian cafés and shipped across the country for home brewing.
-            </p>
-            <p class="fade-in-up delay-2" style="font-size: 1.2rem; line-height: 1.8; color: #555;">
-                In our cafés, great coffee, comfort food, and warm, Modern Indian-inspired architecture come together to create a space that feels like home.
-            </p>
+                <!-- Card 2 -->
+                <div class="tablet-card" style="flex: 1; min-width: 250px; max-width: 280px; background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.3s ease; position: relative; overflow: hidden;">
+                    <div class="tablet-screen" style="background: linear-gradient(135deg, #f8f5f0 0%, #f0e6d9 100%); border-radius: 12px; padding: 2rem; height: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; position: relative; z-index: 2;">
+                        <div class="icon-wrapper" style="width: 80px; height: 80px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(199, 161, 107, 0.3);">
+                            <span style="font-size: 2.5rem;">☕</span>
+                        </div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #2c1810; font-family: 'Cinzel', serif;">Filter Coffee</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 1.5rem;">Rich South Indian filter coffee made with freshly ground coffee beans.</p>
+                    </div>
+                    <div class="tablet-frame" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; border: 2px solid rgba(199, 161, 107, 0.3); border-radius: 20px; pointer-events: none;"></div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="tablet-card" style="flex: 1; min-width: 250px; max-width: 280px; background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.3s ease; position: relative; overflow: hidden;">
+                    <div class="tablet-screen" style="background: linear-gradient(135deg, #f8f5f0 0%, #f0e6d9 100%); border-radius: 12px; padding: 2rem; height: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; position: relative; z-index: 2;">
+                        <div class="icon-wrapper" style="width: 80px; height: 80px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(199, 161, 107, 0.3);">
+                            <span style="font-size: 2.5rem;">🥐</span>
+                        </div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #2c1810; font-family: 'Cinzel', serif;">Snacks</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 1.5rem;">Delicious snacks that perfectly complement your favorite beverage.</p>
+                    </div>
+                    <div class="tablet-frame" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; border: 2px solid rgba(199, 161, 107, 0.3); border-radius: 20px; pointer-events: none;"></div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="tablet-card" style="flex: 1; min-width: 250px; max-width: 280px; background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.3s ease; position: relative; overflow: hidden;">
+                    <div class="tablet-screen" style="background: linear-gradient(135deg, #f8f5f0 0%, #f0e6d9 100%); border-radius: 12px; padding: 2rem; height: 100%; display: flex; flex-direction: column; align-items: center; text-align: center; position: relative; z-index: 2;">
+                        <div class="icon-wrapper" style="width: 80px; height: 80px; background: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; box-shadow: 0 5px 15px rgba(199, 161, 107, 0.3);">
+                            <span style="font-size: 2.5rem;">🍰</span>
+                        </div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #2c1810; font-family: 'Cinzel', serif;">Desserts</h3>
+                        <p style="color: #666; line-height: 1.6; margin-bottom: 1.5rem;">Sweet treats to satisfy your cravings after a refreshing drink.</p>
+                    </div>
+                    <div class="tablet-frame" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; border: 2px solid rgba(199, 161, 107, 0.3); border-radius: 20px; pointer-events: none;"></div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="features" style="padding: 5rem 10%; background-color: white;">
-        <h2 class="section-title fade-in">Why Choose Gowda's Tea?</h2>
-        <div class="features-grid">
-            <div class="feature-card fade-in-up delay-1">
+    <section class="features" style="padding: 5rem 10%; background-color: white; overflow: hidden;">
+        <h2 class="section-title" style="opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease, transform 0.8s ease;">Why Choose Gowda's Tea?</h2>
+        <div class="features-grid" style="position: relative;">
+            <div class="feature-card" style="opacity: 0; transform: translateX(-50px); transition: all 0.8s ease 0.3s;">
                 <div class="feature-icon">
                     <i class="fas fa-leaf"></i>
                 </div>
                 <h3>Premium Quality</h3>
                 <p>Handpicked tea leaves and premium coffee beans sourced from the finest estates.</p>
             </div>
-            <div class="feature-card fade-in-up delay-2">
+            <div class="feature-card" style="opacity: 0; transform: translateY(50px); transition: all 0.8s ease 0.6s;">
                 <div class="feature-icon">
                     <i class="fas fa-award"></i>
                 </div>
                 <h3>Heritage Recipes</h3>
                 <p>Traditional recipes passed down through generations, prepared with authentic spices.</p>
             </div>
-            <div class="feature-card fade-in-up delay-3">
+            <div class="feature-card" style="opacity: 0; transform: translateX(50px); transition: all 0.8s ease 0.9s;">
                 <div class="feature-icon">
                     <i class="fas fa-heart"></i>
                 </div>
                 <h3>Made with Love</h3>
-                <p>Every cup is brewed with care and served with a smile, just for you.</p>
+                <p>Every cup is prepared with care and attention to detail.</p>
             </div>
         </div>
     </section>
 
-
+    
     <script>
-        // Add intersection observer for scroll animations
+        // Initialize animations on scroll
         document.addEventListener('DOMContentLoaded', function() {
-            const animateOnScroll = () => {
-                const elements = document.querySelectorAll('.fade-in, .fade-in-up');
+            function animateOnScroll() {
+                // Animate features section
+                const featuresSection = document.querySelector('.features');
+                const featureCards = document.querySelectorAll('.feature-card');
+                const sectionTitle = document.querySelector('.features .section-title');
+                
+                if (featuresSection) {
+                    const sectionTop = featuresSection.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (sectionTop < windowHeight - 200) {
+                        // Animate section title
+                        if (sectionTitle) {
+                            sectionTitle.style.opacity = '1';
+                            sectionTitle.style.transform = 'translateY(0)';
+                        }
+                        
+                        // Animate feature cards with staggered delay
+                        featureCards.forEach((card, index) => {
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translate(0, 0)';
+                            }, index * 200); // 200ms delay between each card
+                        });
+                    }
+                }
+                
+                // Animate other elements
+                const elements = document.querySelectorAll('.fade-in, .fade-in-up, .speciality-item');
                 elements.forEach(element => {
                     const elementTop = element.getBoundingClientRect().top;
                     const windowHeight = window.innerHeight;
@@ -270,12 +326,12 @@
                         element.style.transform = 'translateY(0)';
                     }
                 });
-            };
+            }
 
             // Initial check
             animateOnScroll();
             
-            // Check on scroll
+            // Listen for scroll events
             window.addEventListener('scroll', animateOnScroll);
         });
     </script>

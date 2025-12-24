@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu - Gowda's Tea Co.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        .menu-section {
+            padding: 60px 0;
+            overflow: hidden;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+        
+        .menu-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .menu-category {
+            margin-bottom: 80px;
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: all 0.8s ease-out;
+        }
+        
+        .menu-category.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .menu-category.even {
+            flex-direction: row-reverse;
+            transform: translateX(100%);
+        }
+        
+        .menu-category.even.visible {
+            transform: translateX(0);
+        }
+        
+        .menu-category {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+        
+        .menu-image {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .menu-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .menu-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .menu-items {
+            flex: 1;
+        }
+        
+        .menu-category h2 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #e67e22;
+            display: inline-block;
+        }
+        
+        .menu-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ddd;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .item-name {
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        .item-price {
+            color: #e67e22;
+            font-weight: 700;
+        }
+        
+        .item-desc {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 768px) {
+            .menu-category {
+                flex-direction: column;
+            }
+            
+            .menu-category.even {
+                flex-direction: column;
+            }
+            
+            .menu-image {
+                width: 100%;
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Gowda's Tea Co.</h1>
+                <p class="tagline">The Heritage Chai Point</p>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="visit.html" class="nav-link">Visit Us</a></li>
+                <li><a href="#contact" class="nav-link">Locate Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="menu-section">
+        <div class="menu-container">
+            <h1 class="section-title">Our Menu</h1>
+            
+            <!-- Coffee Category -->
+            <div class="menu-category">
+                <div class="menu-image">
+                    <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Coffee">
+                </div>
+                <div class="menu-items">
+                    <h2>Coffee</h2>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Espresso</span>
+                            <span class="item-price">$3.50</span>
+                        </div>
+                        <p class="item-desc">A rich, concentrated coffee with a layer of crema on top</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Cappuccino</span>
+                            <span class="item-price">$4.50</span>
+                        </div>
+                        <p class="item-desc">Espresso with steamed milk and a silky layer of foam</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Latte</span>
+                            <span class="item-price">$4.75</span>
+                        </div>
+                        <p class="item-desc">Smooth espresso with steamed milk and a light layer of foam</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tea Category -->
+            <div class="menu-category even">
+                <div class="menu-image">
+                    <img src="https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Tea">
+                </div>
+                <div class="menu-items">
+                    <h2>Tea Selection</h2>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Classic Chai</span>
+                            <span class="item-price">$3.50</span>
+                        </div>
+                        <p class="item-desc">Spiced black tea with milk and aromatic spices</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Green Tea</span>
+                            <span class="item-price">$3.00</span>
+                        </div>
+                        <p class="item-desc">Light and refreshing green tea leaves</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Herbal Infusion</span>
+                            <span class="item-price">$3.25</span>
+                        </div>
+                        <p class="item-desc">Caffeine-free herbal blend with natural flavors</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pastries Category -->
+            <div class="menu-category">
+                <div class="menu-image">
+                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80" alt="Pastries">
+                </div>
+                <div class="menu-items">
+                    <h2>Pastries</h2>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Croissant</span>
+                            <span class="item-price">$3.50</span>
+                        </div>
+                        <p class="item-desc">Buttery, flaky pastry made with French butter</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Blueberry Muffin</span>
+                            <span class="item-price">$3.75</span>
+                        </div>
+                        <p class="item-desc">Moist muffin packed with fresh blueberries</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-header">
+                            <span class="item-name">Chocolate Chip Cookie</span>
+                            <span class="item-price">$2.50</span>
+                        </div>
+                        <p class="item-desc">Classic cookie with melty chocolate chips</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer" style="background: linear-gradient(135deg, #2c1810 0%, #1a0f0a 100%); color: #fff; padding: 4rem 0 2rem; margin-top: 4rem;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <div class="footer-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+                <!-- About Column -->
+                <div class="footer-about">
+                    <h3 style="font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 1.5rem; color: #e6c7a8; position: relative; padding-bottom: 0.75rem;">
+                        <span style="position: relative;">
+                            Gowda's Tea Co.
+                            <span style="position: absolute; bottom: -0.75rem; left: 0; width: 40px; height: 2px; background: #c7a16b;"></span>
+                        </span>
+                    </h3>
+                    <p style="color: #b3b3b3; line-height: 1.7; margin-bottom: 1.5rem;">
+                        Experience the authentic taste of India's finest teas and coffees in the heart of Bangalore.
+                        Our heritage blends and warm hospitality make every visit memorable.
+                    </p>
+                    <div class="social-links" style="display: flex; gap: 1rem;">
+                        <a href="#" style="color: #e6c7a8; font-size: 1.2rem; transition: color 0.3s ease;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="color: #e6c7a8; font-size: 1.2rem; transition: color 0.3s ease;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: #e6c7a8; font-size: 1.2rem; transition: color 0.3s ease;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: #e6c7a8; font-size: 1.2rem; transition: color 0.3s ease;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3 style="font-family: 'Cinzel', serif; font-size: 1.25rem; margin-bottom: 1.5rem; color: #e6c7a8; position: relative; padding-bottom: 0.75rem;">
+                        <span style="position: relative;">
+                            Quick Links
+                            <span style="position: absolute; bottom: -0.75rem; left: 0; width: 40px; height: 2px; background: #c7a16b;"></span>
+                        </span>
+                    </h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.8rem;"><a href="index.html" style="color: #b3b3b3; text-decoration: none; transition: color 0.3s ease; display: inline-block; position: relative; padding-left: 1.5rem;"><i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #c7a16b; font-size: 0.7rem; top: 0.3rem;"></i> Home</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="menu.html" style="color: #e6c7a8; text-decoration: none; transition: color 0.3s ease; display: inline-block; position: relative; padding-left: 1.5rem; font-weight: 600;"><i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #c7a16b; font-size: 0.7rem; top: 0.3rem;"></i> Our Menu</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="about.html" style="color: #b3b3b3; text-decoration: none; transition: color 0.3s ease; display: inline-block; position: relative; padding-left: 1.5rem;"><i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #c7a16b; font-size: 0.7rem; top: 0.3rem;"></i> About Us</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="#contact" style="color: #b3b3b3; text-decoration: none; transition: color 0.3s ease; display: inline-block; position: relative; padding-left: 1.5rem;"><i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #c7a16b; font-size: 0.7rem; top: 0.3rem;"></i> Contact</a></li>
+                        <li style="margin-bottom: 0.8rem;"><a href="#gallery" style="color: #b3b3b3; text-decoration: none; transition: color 0.3s ease; display: inline-block; position: relative; padding-left: 1.5rem;"><i class="fas fa-chevron-right" style="position: absolute; left: 0; color: #c7a16b; font-size: 0.7rem; top: 0.3rem;"></i> Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h3 style="font-family: 'Cinzel', serif; font-size: 1.25rem; margin-bottom: 1.5rem; color: #e6c7a8; position: relative; padding-bottom: 0.75rem;">
+                        <span style="position: relative;">
+                            Contact Us
+                            <span style="position: absolute; bottom: -0.75rem; left: 0; width: 40px; height: 2px; background: #c7a16b;"></span>
+                        </span>
+                    </h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: flex-start;">
+                            <i class="fas fa-map-marker-alt" style="color: #c7a16b; margin-right: 1rem; margin-top: 0.3rem;"></i>
+                            <div>
+                                <h4 style="color: #e6c7a8; margin: 0 0 0.2rem; font-size: 1rem;">Our Location</h4>
+                                <p style="color: #b3b3b3; margin: 0; line-height: 1.5;">123 Tea Street, Bangalore, Karnataka 560001</p>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: flex-start;">
+                            <i class="fas fa-phone-alt" style="color: #c7a16b; margin-right: 1rem; margin-top: 0.3rem;"></i>
+                            <div>
+                                <h4 style="color: #e6c7a8; margin: 0 0 0.2rem; font-size: 1rem;">Call Us</h4>
+                                <p style="color: #b3b3b3; margin: 0; line-height: 1.5;">+91 98765 43210</p>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: flex-start;">
+                            <i class="fas fa-envelope" style="color: #c7a16b; margin-right: 1rem; margin-top: 0.3rem;"></i>
+                            <div>
+                                <h4 style="color: #e6c7a8; margin: 0 0 0.2rem; font-size: 1rem;">Email Us</h4>
+                                <p style="color: #b3b3b3; margin: 0; line-height: 1.5;">info@gowdastea.com</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Opening Hours -->
+                <div class="footer-hours">
+                    <h3 style="font-family: 'Cinzel', serif; font-size: 1.25rem; margin-bottom: 1.5rem; color: #e6c7a8; position: relative; padding-bottom: 0.75rem;">
+                        <span style="position: relative;">
+                            Opening Hours
+                            <span style="position: absolute; bottom: -0.75rem; left: 0; width: 40px; height: 2px; background: #c7a16b;"></span>
+                        </span>
+                    </h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="display: flex; justify-content: space-between; margin-bottom: 0.8rem; padding-bottom: 0.8rem; border-bottom: 1px dashed rgba(255,255,255,0.1);">
+                            <span style="color: #b3b3b3;">Monday - Friday</span>
+                            <span style="color: #e6c7a8; font-weight: 500;">7:00 AM - 9:00 PM</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; margin-bottom: 0.8rem; padding-bottom: 0.8rem; border-bottom: 1px dashed rgba(255,255,255,0.1);">
+                            <span style="color: #b3b3b3;">Saturday</span>
+                            <span style="color: #e6c7a8; font-weight: 500;">8:00 AM - 10:00 PM</span>
+                        </li>
+                        <li style="display: flex; justify-content: space-between; margin-bottom: 0.8rem; padding-bottom: 0.8rem; border-bottom: 1px dashed rgba(255,255,255,0.1);">
+                            <span style="color: #b3b3b3;">Sunday</span>
+                            <span style="color: #e6c7a8; font-weight: 500;">8:00 AM - 10:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom" style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; text-align: center;">
+                <p style="color: #8a8a8a; margin: 0; font-size: 0.9rem;">
+                    &copy; <span id="current-year">2023</span> Gowda's Tea Co. All Rights Reserved.
+                </p>
+                <div class="footer-legal" style="margin-top: 1rem;">
+                    <a href="#" style="color: #8a8a8a; text-decoration: none; font-size: 0.8rem; margin: 0 0.5rem; transition: color 0.3s ease;">Privacy Policy</a>
+                    <span style="color: #8a8a8a;">|</span>
+                    <a href="#" style="color: #8a8a8a; text-decoration: none; font-size: 0.8rem; margin: 0 0.5rem; transition: color 0.3s ease;">Terms of Service</a>
+                    <span style="color: #8a8a8a;">|</span>
+                    <a href="#" style="color: #8a8a8a; text-decoration: none; font-size: 0.8rem; margin: 0 0.5rem; transition: color 0.3s ease;">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" style="position: fixed; bottom: 2rem; right: 2rem; background: #c7a16b; color: #2c1810; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; z-index: 99; opacity: 0; visibility: hidden; transform: translateY(20px);">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Animation for menu items sliding in
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set current year in footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+            
+            // Menu category animations
+            const menuCategories = document.querySelectorAll('.menu-category');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            menuCategories.forEach(category => observer.observe(category));
+            
+            // Mobile menu toggle
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            hamburger.addEventListener('click', () => {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+                document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
+            });
+            
+            // Close mobile menu when clicking a link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+            
+            // Back to top button
+            const backToTopButton = document.querySelector('.back-to-top');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.style.opacity = '1';
+                    backToTopButton.style.visibility = 'visible';
+                    backToTopButton.style.transform = 'translateY(0)';
+                } else {
+                    backToTopButton.style.opacity = '0';
+                    backToTopButton.style.visibility = 'hidden';
+                    backToTopButton.style.transform = 'translateY(20px)';
+                }
+            });
+            
+            backToTopButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

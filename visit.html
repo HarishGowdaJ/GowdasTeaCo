@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Us - Gowda's Tea Co.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Add any specific styles for the visit page here */
+        .visit-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1507133750040-4f8f4a3a6de3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 8rem 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .visit-hero h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .visit-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .location-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-bottom: 4rem;
+        }
+        
+        .location-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .location-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .location-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .location-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .location-card:hover .location-image img {
+            transform: scale(1.05);
+        }
+        
+        .location-details {
+            padding: 2rem;
+        }
+        
+        .location-details h2 {
+            font-family: 'Cinzel', serif;
+            color: #2c1810;
+            margin-bottom: 1rem;
+        }
+        
+        .location-info {
+            margin-bottom: 1.5rem;
+        }
+        
+        .location-info p {
+            margin: 0.5rem 0;
+            color: #555;
+            display: flex;
+            align-items: center;
+        }
+        
+        .location-info i {
+            color: #c7a16b;
+            margin-right: 10px;
+            width: 20px;
+            text-align: center;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #c7a16b;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background: #b38c5c;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(199, 161, 107, 0.3);
+        }
+        
+        .map-container {
+            height: 500px;
+            margin: 4rem 0;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .visit-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .location-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Gowda's Tea Co.</h1>
+                <p class="tagline">The Heritage Chai Point</p>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="visit.html" class="nav-link active">Visit Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="visit-hero">
+        <div class="container">
+            <h1>Visit Our Tea House</h1>
+            <p>Experience the authentic taste of Indian chai in a warm and inviting atmosphere</p>
+        </div>
+    </section>
+
+    <!-- Locations -->
+    <section class="visit-content">
+        <div class="location-grid">
+            <!-- Location 1 -->
+            <div class="location-card">
+                <div class="location-image">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Gowda's Tea Co. - Downtown">
+                </div>
+                <div class="location-details">
+                    <h2>Downtown Location</h2>
+                    <div class="location-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Tea Street, Bangalore, Karnataka 560001</p>
+                        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                        <p><i class="fas fa-envelope"></i> downtown@gowdastea.com</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sun: 7:00 AM - 11:00 PM</p>
+                    </div>
+                    <a href="#downtown-map" class="btn">View on Map</a>
+                </div>
+            </div>
+            
+            <!-- Location 2 -->
+            <div class="location-card">
+                <div class="location-image">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Gowda's Tea Co. - Uptown">
+                </div>
+                <div class="location-details">
+                    <h2>Uptown Location</h2>
+                    <div class="location-info">
+                        <p><i class="fas fa-map-marker-alt"></i> 456 Chai Road, Bangalore, Karnataka 560034</p>
+                        <p><i class="fas fa-phone"></i> +91 98765 43211</p>
+                        <p><i class="fas fa-envelope"></i> uptown@gowdastea.com</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sun: 7:30 AM - 10:30 PM</p>
+                    </div>
+                    <a href="#uptown-map" class="btn">View on Map</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Map Section -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.007593412787!2d77.59418931482193!3d12.971997990856068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf5dfd3b4a2a1a3b5!2sBangalore%2C%20Karnataka%2056001!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="contact-form" style="max-width: 800px; margin: 0 auto 4rem;">
+            <h2 style="text-align: center; margin-bottom: 2rem; font-family: 'Cinzel', serif; color: #2c1810;">Get in Touch</h2>
+            <form style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div>
+                        <label for="name" style="display: block; margin-bottom: 0.5rem; color: #555; font-weight: 500;">Your Name</label>
+                        <input type="text" id="name" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px; font-family: 'Montserrat', sans-serif;">
+                    </div>
+                    <div>
+                        <label for="email" style="display: block; margin-bottom: 0.5rem; color: #555; font-weight: 500;">Email Address</label>
+                        <input type="email" id="email" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px; font-family: 'Montserrat', sans-serif;">
+                    </div>
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="subject" style="display: block; margin-bottom: 0.5rem; color: #555; font-weight: 500;">Subject</label>
+                    <input type="text" id="subject" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px; font-family: 'Montserrat', sans-serif;">
+                </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="message" style="display: block; margin-bottom: 0.5rem; color: #555; font-weight: 500;">Your Message</label>
+                    <textarea id="message" rows="5" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 5px; font-family: 'Montserrat', sans-serif; resize: vertical;"></textarea>
+                </div>
+                <button type="submit" class="btn" style="display: block; width: 200px; margin: 0 auto; text-align: center;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" style="background: linear-gradient(135deg, #2c1810 0%, #1a0f0a 100%); color: #fff; padding: 4rem 0 2rem; margin-top: 4rem;">
+        <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+            <div class="footer-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-bottom: 3rem;">
+                <!-- About Column -->
+                <div class="footer-about">
+                    <h3 style="font-family: 'Cinzel', serif; font-size: 1.5rem; margin-bottom: 1.5rem; color: #e6c7a8; position: relative; padding-bottom: 0.75rem;">
+                        <span style="position: relative;">
+                            Gowda's Tea Co.
+                            <span style="position: absolute; bottom: -0.75rem; left: 0; width: 50px; height: 2px; background: #c7a16b;"></span>
+                        </span>
+                    </h3>
+                    <p style="color: #b3b3b3; line-height: 1.7; margin-bottom: 1.5rem;">
+                        Preserving the rich heritage of authentic Indian tea traditions since 1995. Every cup tells a story of passion, tradition, and excellence.
+                    </p>
+                    <div class="social-links" style="display: flex; gap: 1rem;">
+                        <a href="#" style="color: #e6c7a8; font-size: 1.25rem; transition: color 0.3s ease;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" style="color: #e6c7a8; font-size: 1.25rem; transition: color 0.3s ease;"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="color: #e6c7a8; font-size: 1.25rem; transition: color 0.3s ease;"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3 style="font-family: 'Cinzel', serif; font-size: 1.25rem; margin-bottom: 1.5rem; color: #e6c7a8; position: relative; padding-bottom: 0.75rem;">
+                        <span style="position: relative;">
+                            Quick Links
+                            <span style="position: absolute; bottom: -0.75rem; left: 0; width: 40px; height: 2px; background: #c7a16b;"></span>
+                        </span>
+                    </h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 0.8rem;">
+                            <a href="index.html" style="color: #b3b3b3; text-decoration: none; transition: color 0.3s ease; display: flex; align-items: center;">
+                                <i class="fas fa-chevron-right" style="margin-right: 8px; font-size: 0.7rem; color: #c7a16b;"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0.8rem;">
+                            <a href="menu.html" style="color: #b3b3b3; text-decoration: none; transition: color 0.3s ease; display: flex; align-items: center;">
+                                <i class="fas fa-chevron-right" style="margin-right: 8px; font-size: 0.7rem; color: #c7a16b;"></i>
+                                Our Menu
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0.8rem;">
+                            <a href="about.html" style="color: #b3b3b3; text-decoration: none; transition: color 0.3s ease; display: flex; align-items: center;">
+                                <i class="fas fa-chevron-right" style="margin-right: 8px; font-size: 0.7rem; color: #c7a16b;"></i>
+                                About Us
+                            </a>
+                        </li>
+                        <li style="margin-bottom: 0.8rem;">
+                            <a href="visit.html" style="color: #e6c7a8; text-decoration: none; transition: color 0.3s ease; display: flex; align-items: center; font-weight: 600;">
+                                <i class="fas fa-chevron-right" style="margin-right: 8px; font-size: 0.7rem; color: #c7a16b;"></i>
+                                Visit Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h3 style="font-family: 'Cinzel', serif; font-size: 1.25rem; margin-bottom: 1.5rem; color: #e6c7a8; position: relative; padding-bottom: 0.75rem;">
+                        <span style="position: relative;">
+                            Contact Us
+                            <span style="position: absolute; bottom: -0.75rem; left: 0; width: 40px; height: 2px; background: #c7a16b;"></span>
+                        </span>
+                    </h3>
+                    <ul style="list-style: none; padding: 0; margin: 0;">
+                        <li style="margin-bottom: 1rem; display: flex; align-items: flex-start;">
+                            <i class="fas fa-map-marker-alt" style="color: #c7a16b; margin-right: 15px; margin-top: 5px; font-size: 1.1rem;"></i>
+                            <span style="color: #b3b3b3; line-height: 1.6;">
+                                123 Tea Street, Bangalore<br>Karnataka 560001, India
+                            </span>
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center;">
+                            <i class="fas fa-phone" style="color: #c7a16b; margin-right: 15px; font-size: 1.1rem;"></i>
+                            <a href="tel:+919876543210" style="color: #b3b3b3; text-decoration: none; transition: color 0.3s ease;">+91 98765 43210</a>
+                        </li>
+                        <li style="margin-bottom: 1rem; display: flex; align-items: center;">
+                            <i class="fas fa-envelope" style="color: #c7a16b; margin-right: 15px; font-size: 1.1rem;"></i>
+                            <a href="mailto:info@gowdastea.com" style="color: #b3b3b3; text-decoration: none; transition: color 0.3s ease;">info@gowdastea.com</a>
+                        </li>
+                        <li style="display: flex; align-items: center;">
+                            <i class="fas fa-clock" style="color: #c7a16b; margin-right: 15px; font-size: 1.1rem;"></i>
+                            <span style="color: #b3b3b3;">Mon-Sun: 8:00 AM - 10:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-newsletter">
+                    <h3 style="font-family: 'Cinzel', serif; font-size: 1.25rem; margin-bottom: 1.5rem; color: #e6c7a8; position: relative; padding-bottom: 0.75rem;">
+                        <span style="position: relative;">
+                            Newsletter
+                            <span style="position: absolute; bottom: -0.75rem; left: 0; width: 40px; height: 2px; background: #c7a16b;"></span>
+                        </span>
+                    </h3>
+                    <p style="color: #b3b3b3; margin-bottom: 1.5rem; line-height: 1.7;">
+                        Subscribe to our newsletter for the latest updates, special offers, and tea-related news.
+                    </p>
+                    <form style="display: flex; margin-bottom: 1.5rem;">
+                        <input type="email" placeholder="Your email address" style="flex: 1; padding: 12px 15px; border: 1px solid #444; background: rgba(255,255,255,0.05); color: #fff; border-radius: 4px 0 0 4px; outline: none; transition: all 0.3s ease;" required>
+                        <button type="submit" style="background: #c7a16b; color: #2c1810; border: none; padding: 0 20px; cursor: pointer; font-weight: 600; border-radius: 0 4px 4px 0; transition: all 0.3s ease;">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    <p style="color: #8a8a8a; font-size: 0.85rem; line-height: 1.6;">
+                        We respect your privacy. Unsubscribe at any time.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom" style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; text-align: center;">
+                <p style="color: #8a8a8a; margin: 0; font-size: 0.9rem;">
+                    &copy; 2023 Gowda's Tea Co. All Rights Reserved.
+                </p>
+                <div class="payment-methods" style="margin-top: 1rem;">
+                    <i class="fab fa-cc-visa" style="color: #8a8a8a; margin: 0 5px; font-size: 1.5rem;"></i>
+                    <i class="fab fa-cc-mastercard" style="color: #8a8a8a; margin: 0 5px; font-size: 1.5rem;"></i>
+                    <i class="fab fa-cc-paypal" style="color: #8a8a8a; margin: 0 5px; font-size: 1.5rem;"></i>
+                    <i class="fab fa-google-pay" style="color: #8a8a8a; margin: 0 5px; font-size: 1.5rem;"></i>
+                    <i class="fab fa-apple-pay" style="color: #8a8a8a; margin: 0 5px; font-size: 1.5rem;"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" style="position: fixed; bottom: 2rem; right: 2rem; background: #c7a16b; color: #2c1810; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; z-index: 99; opacity: 0; visibility: hidden; transform: translateY(20px);">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Back to Top Button
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTopButton = document.querySelector('.back-to-top');
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.style.opacity = '1';
+                    backToTopButton.style.visibility = 'visible';
+                    backToTopButton.style.transform = 'translateY(0)';
+                } else {
+                    backToTopButton.style.opacity = '0';
+                    backToTopButton.style.visibility = 'hidden';
+                    backToTopButton.style.transform = 'translateY(20px)';
+                }
+            });
+            
+            backToTopButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Mobile menu toggle
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (hamburger && navMenu) {
+                hamburger.addEventListener('click', () => {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+
+                // Close menu when clicking on a nav link
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburger.classList.remove('active');
+                        navMenu.classList.remove('active');
+                    });
+                });
+            }
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href === '#') return;
+                    
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
