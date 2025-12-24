@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gowda's Tea Co. - The Heritage Chai Point</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        .fade-in-up {
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .delay-1 { animation-delay: 0.2s; }
+        .delay-2 { animation-delay: 0.4s; }
+        .delay-3 { animation-delay: 0.6s; }
+        .delay-4 { animation-delay: 0.8s; }
+        
+        /* Landing Page Specific Styles */
+        .landing-hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            margin-top: 0;
+            overflow: hidden;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') 
+                        center/cover no-repeat;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 0 20px;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-size: 5rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-family: 'Cinzel', serif;
+            letter-spacing: 2px;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1s ease-out 0.5s both;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary-color);
+            color: white;
+            border: 2px solid var(--secondary-color);
+            font-size: 1.2rem;
+            padding: 1rem 3rem;
+            animation: fadeIn 1s ease-out 0.8s both;
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .features {
+            padding: 5rem 10%;
+            background-color: white;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-content p {
+                font-size: 1.2rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 250px;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section with Background Image -->
+    <section class="landing-hero">
+        <div class="hero-content">
+            <h1>Gowda's Tea Co.</h1>
+            <p>The Heritage Chai Point</p>
+            <div class="cta-buttons">
+                <a href="index.html" class="btn btn-primary">Let's Start</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Tea Journey Section -->
+    <section class="journey-section" style="padding: 5rem 10%; background-color: #f9f9f9; text-align: center;">
+        <h2 class="section-title fade-in">Our Tea Journey</h2>
+        <div class="journey-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+            <div class="stat-card fade-in-up delay-1" style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <h3 style="color: #666; font-size: 1.2rem; margin-bottom: 1rem;">Since</h3>
+                <p style="font-size: 3rem; font-weight: bold; color: var(--secondary-color); margin: 0.5rem 0;">1,995</p>
+                <p style="color: #666;">Years of Excellence</p>
+            </div>
+            <div class="stat-card fade-in-up delay-2" style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <h3 style="color: #666; font-size: 1.2rem; margin-bottom: 1rem;">Growth</h3>
+                <p style="font-size: 3rem; font-weight: bold; color: var(--secondary-color); margin: 0.5rem 0;">300%</p>
+                <p style="color: #666;">Growth Rate</p>
+            </div>
+            <div class="stat-card fade-in-up delay-3" style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
+                <h3 style="color: #666; font-size: 1.2rem; margin-bottom: 1rem;">Cups Served</h3>
+                <p style="font-size: 3rem; font-weight: bold; color: var(--secondary-color); margin: 0.5rem 0;">10,00,000+</p>
+                <p style="color: #666;">And Counting</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coffee Experience Section -->
+    <section class="coffee-experience" style="padding: 5rem 10%; background-color: white; text-align: center;">
+        <div class="container" style="max-width: 900px; margin: 0 auto;">
+            <h2 class="fade-in" style="font-size: 2.5rem; margin-bottom: 2rem; color: #333;">Experience Modern Indian Speciality Coffee</h2>
+            <p class="fade-in-up delay-1" style="font-size: 1.2rem; line-height: 1.8; color: #555; margin-bottom: 1.5rem;">
+                Roastery is India's home for speciality coffee, served fresh in our modern Indian cafés and shipped across the country for home brewing.
+            </p>
+            <p class="fade-in-up delay-2" style="font-size: 1.2rem; line-height: 1.8; color: #555;">
+                In our cafés, great coffee, comfort food, and warm, Modern Indian-inspired architecture come together to create a space that feels like home.
+            </p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" style="padding: 5rem 10%; background-color: white;">
+        <h2 class="section-title fade-in">Why Choose Gowda's Tea?</h2>
+        <div class="features-grid">
+            <div class="feature-card fade-in-up delay-1">
+                <div class="feature-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Premium Quality</h3>
+                <p>Handpicked tea leaves and premium coffee beans sourced from the finest estates.</p>
+            </div>
+            <div class="feature-card fade-in-up delay-2">
+                <div class="feature-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <h3>Heritage Recipes</h3>
+                <p>Traditional recipes passed down through generations, prepared with authentic spices.</p>
+            </div>
+            <div class="feature-card fade-in-up delay-3">
+                <div class="feature-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Made with Love</h3>
+                <p>Every cup is brewed with care and served with a smile, just for you.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        // Add intersection observer for scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateOnScroll = () => {
+                const elements = document.querySelectorAll('.fade-in, .fade-in-up');
+                elements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    
+                    if (elementTop < windowHeight - 100) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+
+            // Initial check
+            animateOnScroll();
+            
+            // Check on scroll
+            window.addEventListener('scroll', animateOnScroll);
+        });
+    </script>
+</body>
+</html>
